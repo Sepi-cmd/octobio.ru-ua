@@ -7,16 +7,17 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Google+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #2e3440;
-            --container-bg: #3b4252;
-            --text-primary: #e5e9f0;
-            --text-secondary: #81a1c1;
-            --accent-1: #a3be8c;
-            --accent-2: #88c0d0;
-            --accent-3: #ebcb8b;
+            --bg-color: #32302f;
+            --container-bg: #3c3836;
+            --text-primary: #ebdbb2;
+            --text-secondary: #a89984;
+            --accent-1: #b8bb26;
+            --accent-2: #83a598;
+            --accent-3: #fabd2f;
             --shadow-color: rgba(0, 0, 0, 0.4);
+            --border-color: #504945;
         }
-        
+
         body {
             font-family: 'Google Sans', sans-serif;
             background-color: var(--bg-color);
@@ -29,7 +30,7 @@
             justify-content: center;
             align-items: center;
         }
-        
+
         .bio-container {
             width: 90%;
             max-width: 1200px;
@@ -38,9 +39,9 @@
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 10px 30px var(--shadow-color);
-            border: 1px solid #4c566a;
+            border: 1px solid var(--border-color);
         }
-        
+
         h1 {
             font-family: 'JetBrains Mono', monospace;
             color: var(--accent-2);
@@ -50,11 +51,11 @@
             font-weight: 700;
             letter-spacing: -0.5px;
         }
-        
+
         .bio-section {
             margin-bottom: 30px;
         }
-        
+
         .bio-section h2 {
             font-family: 'JetBrains Mono', monospace;
             color: var(--accent-1);
@@ -62,42 +63,42 @@
             margin-bottom: 10px;
             font-weight: 500;
         }
-        
+
         .bio-entry {
             display: flex;
             margin-bottom: 8px;
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.95em;
         }
-        
+
         .bio-label {
             min-width: 250px;
             color: var(--text-secondary);
             font-weight: 500;
         }
-        
+
         .bio-value {
             color: var(--text-primary);
             font-weight: 400;
         }
-        
+
         .divider {
             height: 2px;
             background: linear-gradient(90deg, transparent, var(--accent-3), transparent);
             margin: 25px 0;
             border: none;
         }
-        
+
         @media (max-width: 768px) {
             .bio-container {
                 padding: 25px;
                 width: 95%;
             }
-            
+
             .bio-entry {
                 flex-direction: column;
             }
-            
+
             .bio-label {
                 min-width: 100%;
                 margin-bottom: 5px;
@@ -108,11 +109,11 @@
 <body>
     <div class="bio-container">
         <h1>~/bio.txt</h1>
-        
+
         <div class="bio-section">
             <h2>Main</h2>
             <div class="bio-entry">
-                <span class="bio-label">| Имя: </span>
+                <span class="bio-label">| Name: </span>
                 <span class="bio-value">Alex</span>
             </div>
             <div class="bio-entry">
@@ -124,9 +125,9 @@
                 <span class="bio-value">Tech, history, games, etc</span>
             </div>
         </div>
-        
+
         <div class="divider"></div>
-        
+
         <div class="bio-section">
             <h2>Languages</h2>
             <div class="bio-entry">
@@ -138,9 +139,9 @@
                 <span class="bio-value"> Python, JS, bash shell </span>
             </div>
         </div>
-        
+
         <div class="divider"></div>
-        
+
         <div class="bio-section">
             <h2>System</h2>
             <div class="bio-entry">
@@ -156,11 +157,11 @@
                 <span class="bio-value">Cherrygram</span>
            </div>
         </div>
-        
+
         <div class="divider"></div>
-        
+
         <div class="bio-section">
-            <h2>УDevices</h2>
+            <h2>Devices</h2>
             <div class="bio-entry">
                 <span class="bio-label">| Laptop/portable computer: </span>
                 <span class="bio-value">Asus TUF Gaming A16 Advantage R7 7435HS RX 7600S SSD NVMe 512g RAM DDR5 16G)</span>
@@ -182,7 +183,7 @@
                 <span class="bio-value">AKKO 5075B Plus, Mchose A5</span>
             </div>
             <div class="bio-entry">
-                <span class="bio-label">| Оthers: </span>
+                <span class="bio-label">| Others: </span>
                 <span class="bio-value">Hator Rockfall Mecha 2 TKL, Bloody V3MA, Ajazz AK820 (sometimes main keyboard), Sentry BTA1000 </span>
             </div>
         </div>
